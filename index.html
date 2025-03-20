@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Submission</title>
+    <link rel="stylesheet" href="./css/projet1.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/all.min.css">    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "oq5M6k_e8OlATA32e",
+        });
+    })();
+    </script>
+</head>
+<body>
+    <!-- Header Starting-->
+    <div class="header">
+        <div class="container">
+            <img class="logo" src="images/logo.png" alt="">
+            <div class="links">
+                <span class="icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Header Ending -->
+    <!-- Start Landing Section -->
+    <div class="landing">
+        <div class="intro-text">
+            <h1>Hello There</h1>
+            <p>Season 2 has just begun. Welcome back!</p>
+        </div>
+    </div>
+    <!-- End Landing Section -->
+    <!-- Start Features -->
+    <div class="features">
+        <div class="container">
+            <div class="feat">
+                <i class="fas fa-magic fa-3x"></i>
+                <h3>What’s the one thing about you that I can never forget?</h3>
+                <button onclick="toggleAnswer('answer')">The answer</button>
+                <p id="answer" style="display: none;">Everything</p>
+            </div>
+            <div class="feat">
+                <i class="fas fa-gem fa-3x"></i>
+                <h3>Your dream?</h3>
+                <input type="text" id="dreamAnswer" placeholder="Feel free to answer">
+                <button onclick="sendDream()">Send</button>
+            </div>
+            <div class="feat">
+                <i class="fas fa-globe-asia fa-3x"></i>
+                <h3>What’s one question about life you wish you had the answer to?</h3>
+                <input type="text" id="lifeAnswer" placeholder="Feel free to answer">
+                <button onclick="sendLife()">Send</button>
+            </div>
+        </div>
+    </div>
+    <!-- End Features -->
+    <!-- Start Services-->
+    <div class="services">
+        <div class="container">
+            <h2 class="special-heading">Asmae</h2>
+            <p>A source of inspiration and warmth in every moment.</p>
+            <div class="services-content">
+                <div class="col">
+                    <!-- Start Services -->
+                    <div class="srv">
+                        <i class="fas fa-palette fa-2x"></i>
+                        <div class="text">
+                            <h3 id="AA">If my thoughts of you were a function f(x), what would be its derivative?</h3>
+                            <button id="BB" onclick="toggleAnswer('answer3')">The answer</button>
+                            <p id="answer3" style="display: none;">Constant, because it never changes.</p>
+                        </div>
+                    </div>
+                    <div class="srv">
+                        <i class="fa-solid fa-circle-nodes fa-2x"></i>
+                        <div class="text">
+                            <h3>If you could have any superpower, what would it be?</h3>
+                            <div id="CC">
+                                <input type="text" id="thirdAnswer" placeholder="Feel free to answer">
+                                <button onclick="sendThird()">Send</button>
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- End Services -->
+                </div>
+                <div class="col">
+                    <!-- Start Services -->
+                     <div class="srv">
+                        <i class="fa-solid fa-stamp fa-2x"></i>
+                        <div class="text">
+                            <h3 id="AA">If you want to ask anything, the input is yours:</h3>
+                            <div id="CC">
+                                <input type="text" id="secondAnswer" placeholder="Feel free to answer">
+                                <button onclick="sendSecond()">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="srv">
+                        <i class="fa-solid fa-layer-group fa-2x"></i>
+                        <div class="text">
+                            <h3>😊:</h3>
+                            <button id="DD" onclick="toggleAnswer('answer4')">👆</button>
+                            <p id="answer4" style="display: none;" onclick="toggleAnswer('answer5')">What?🤨, want to click again?</p>
+                            <p id="answer5" style="display: none;">Just kidding 😉✌</p>
+                        </div>
+                    </div>
+                    
+                    <!-- End Services -->
+                </div>
+                <div class="col">
+                    <div class="image image-column">
+                        <img src="images/&9.PNG" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Services-->
+    <!-- Start Portfolio-->
+    <div class="portfolio">
+        <div class="container">
+            <h2 class="special-heading">Library</h2>
+            <p>A field representing you!</p>
+            <div class="portfolio-content">
+                <div class="card">
+                    <img src="images/&1.PNG" alt="">
+                    <div class="info">
+                        <h3>Balance</h3>
+                        <p>The calm that brings clarity to chaos..</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/break.jpg" alt="">
+                    <div class="info">
+                        <h3>A break hhhhhh</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/&9.PNG" alt="">
+                    <div class="info">
+                        <h3>Center</h3>
+                        <p>The quiet center that makes everything align..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Portfolio-->
+    <!-- Start About-->
+    <!-- <div class="about">
+        <div class="container">
+            <h2 class="special-heading">About</h2>
+            <p>Less is more work!</p>
+            <div class="about-content">
+                <div class="image">
+                    <img src="images/A121.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nisi laboriosam quod adipisci mollitia.</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- End About-->
+    <!-- Start Contact-->
+    <div class="contact">
+        <div class="container">
+            <h2 class="special-heading">THE END</h2>
+            <p>We are born to create!</p>
+            <div class="info">
+                <p class="label">Feel free to drop us a line</p>
+                <a href="mailto:anasshadioui8@gmail.com" class="link">anasshadioui8@gmail.com</a>
+                <!-- <div class="social">
+                    Find us on Social Media 
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                </div> -->
+            </div>
+                 <!-- Start Letter -->
+            <div id="letter">
+                <button id="letter-button">
+                        <a id="letter-link" href="./letter/valentines-day-card.html">Letter</a>
+                </button>
+            </div>
+            <!-- End Letter -->
+        </div>
+    </div>
+    <!-- End Contact-->
+    <!--Start Footer-->
+    <div class="footer">
+        &copy; 2025 <span>Leon</span> All Right Reserved!
+    </div>
+    <!--End Footer-->
+    <script>
+        // Function to toggle the answer visibility
+        function toggleAnswer(answerId) {
+            var answerDiv = document.getElementById(answerId);
+            if (answerDiv.style.display === 'none' || answerDiv.style.display === '') {
+                answerDiv.style.display = 'block'; // Show the answer div
+            } else {
+                answerDiv.style.display = 'none'; // Hide the answer div
+            }
+        }
+        function sendDream() {
+            let params = {
+                dream: document.getElementById('dreamAnswer').value
+            };
+            emailjs.send('service_zpcboii', 'template_qxi2xej', params)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Your dream has been sent successfully!');
+                    dreamAnswer.value = '';
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert('Failed to send your dream!');
+                });
+        }
+        function sendSecond() {
+            let params = {
+                message: document.getElementById('secondAnswer').value
+            };
+            emailjs.send('service_zpcboii', 'template_1pan3lq', params)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Your question has been sent successfully!');
+                    sendSecond.value = '';
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert('Failed to send your question!');
+                });
+        }
+        function sendThird() {
+            let params = {
+                third: document.getElementById('thirdAnswer').value
+            };
+            emailjs.send('service_zpcboii', 'template_1pan3lq', params)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Your answer has been sent successfully!');
+                    thirdAnswer.value = '';
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert('Failed to send your answer!');
+                });
+        }
+        function sendLife() {
+            let params = {
+                life: document.getElementById('lifeAnswer').value
+            };
+            emailjs.send('service_zpcboii', 'template_1pan3lq', params)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Your answer has been sent successfully!');
+                    lifeAnswer.value = '';
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert('Failed to send your answer!');
+                });
+        }
+    </script>
+</body>
+</html>
